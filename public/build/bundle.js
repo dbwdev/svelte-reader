@@ -591,8 +591,10 @@ var app = (function () {
     	let t1;
     	let span;
     	let t2;
-    	let a;
+    	let a0;
     	let t4;
+    	let a1;
+    	let t6;
     	let current;
     	const reader = new Reader({ $$inline: true });
 
@@ -604,15 +606,21 @@ var app = (function () {
     			t1 = space();
     			span = element("span");
     			t2 = text("Made by ");
-    			a = element("a");
-    			a.textContent = "@dbwdev";
-    			t4 = space();
+    			a0 = element("a");
+    			a0.textContent = "@dbwdev";
+    			t4 = text(" | ");
+    			a1 = element("a");
+    			a1.textContent = "GitHub";
+    			t6 = space();
     			create_component(reader.$$.fragment);
     			attr_dev(h1, "class", "svelte-94he2j");
     			add_location(h1, file$1, 5, 2, 69);
-    			attr_dev(a, "href", "https://twitter.com/dbwdev");
-    			attr_dev(a, "target", "_blank");
-    			add_location(a, file$1, 6, 31, 129);
+    			attr_dev(a0, "href", "https://twitter.com/dbwdev");
+    			attr_dev(a0, "target", "_blank");
+    			add_location(a0, file$1, 6, 31, 129);
+    			attr_dev(a1, "href", "https://github.com/dbwdev/svelte-reader");
+    			attr_dev(a1, "target", "_blank");
+    			add_location(a1, file$1, 6, 98, 196);
     			attr_dev(span, "class", "byline");
     			add_location(span, file$1, 6, 2, 100);
     			attr_dev(main, "class", "svelte-94he2j");
@@ -627,8 +635,10 @@ var app = (function () {
     			append_dev(main, t1);
     			append_dev(main, span);
     			append_dev(span, t2);
-    			append_dev(span, a);
-    			append_dev(main, t4);
+    			append_dev(span, a0);
+    			append_dev(span, t4);
+    			append_dev(span, a1);
+    			append_dev(main, t6);
     			mount_component(reader, main, null);
     			current = true;
     		},

@@ -4,7 +4,7 @@
 
 <main>
   <h1>Svelte Speed Reader</h1>
-  <span class="byline">Made by <a href="https://twitter.com/dbwdev" target="_blank">@dbwdev</a></span>
+  <span class="byline">Made by <a href="https://twitter.com/dbwdev" target="_blank">@dbwdev</a> | <a href="https://github.com/dbwdev/svelte-reader" target="_blank">GitHub</a></span>
   <Reader />
 </main>
 
